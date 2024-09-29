@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Admin Panel</h1>
+
+    <div id="login-section">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="admin-section" style="display: none;">
+        <h2>Add New Item</h2>
+        <input type="text" id="itemName" placeholder="Item Name">
+        <input type="number" id="itemPrice" placeholder="Item Price">
+        <input type="text" id="itemImage" placeholder="Item Image URL">
+        <button onclick="addItem()">Add Item</button>
+
+        <h2>All Items</h2>
+        <div id="all-items"></div>
+    </div>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>
