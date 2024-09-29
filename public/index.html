@@ -1,44 +1,41 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothing Store</title>
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-    <h1>Welcome to the Clothing Store</h1>
-    <div id="items-container"></div>
-
-    <script src="/js/script.js"></script>
-</body>
-</html> -->
-<!-- public/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Clothing Store</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Clothing Store</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Sale</a></li>
-                <li><a href="#">New Arrivals</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="logo">
+          <img src="" alt="">
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
         </nav>
     </header>
-    
-    <div id="items-container" class="product-container">
-        <!-- Product items will be dynamically inserted here -->
-    </div>
-    
+
+    <!-- Promotional Banner Section -->
+    <section class="promo-banner">
+        <h2>Free Next-Day Shipping on All Orders!</h2>
+    </section>
+
+    <!-- Product Display Section -->
+    <section class="product-container" id="items-container">
+        <!-- JavaScript will populate product cards here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rich Taste Clothing</p>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
