@@ -61,3 +61,23 @@ function loadItems() {
             });
         });
 }
+
+// public/js/script.js
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('/api/items')
+        .then(response => response.json())
+        .then(items => {
+            const itemsContainer = document.getElementById('items-container');
+            items.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.className = 'product-card';
+                itemElement.innerHTML = `
+                    <img src="${item.imageUrl}" alt="${item.name}" class="product-image">
+                    <h3 class="product-title">${item.name}</h3>
+                    <p class="product-price">$${item.price}</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                `;
+                itemsContainer.appendChild(itemElement);
+            });
+        });
+});
